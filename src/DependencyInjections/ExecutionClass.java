@@ -19,10 +19,6 @@ public class ExecutionClass {
 		System.out.println(emp.getAddress().getCity().getPin());
 
 
-
-
-
-		
 		
 	}
 

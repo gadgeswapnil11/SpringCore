@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+	<bean id="emp1"
+		class="DependencyInjectionCollectionFramwork.Employee">
+		<property name="id" value="1"></property>
+		<property name="name" value="Swapnil"></property>
+
+		<property name="list">
+			<list>
+				<value>11111</value>
+				<value>22222</value>
+				<value>33333</value>
+				<value>44444</value>
+				<value>55555</value>
+				<value>66666</value>
+
+
+			</list>
+
+
+		</property>
+
+		<property name="set">
+			<set>
+				<value></value>
+				<value>Swapnil</value>
+				<value>Avinash</value>
+				<value>Shivansh</value>
+				<value>Shubham</value>
+				<value>Vaishnavi</value>
+				<value>Swapnil</value>
+				<value>Swapnil</value>
+
+			</set>
+		</property>
+
+
+		<property name="map">
+			<map>
+				<entry key="11111" value="Swapnil">
+				</entry>
+				<entry key="22222" value="Shivansh">
+				</entry>
+				<entry key="33333" value="Avinash">
+				</entry>
+				<entry key="44444" value="Swapnil">
+				</entry>
+				<entry key="55555" value="Shubham">
+				</entry>
+				<entry key="66666" value="Vaishnavi">
+				</entry>
+
+
+			</map>
+
+		</property>
+	</bean>
+
+</beans>
