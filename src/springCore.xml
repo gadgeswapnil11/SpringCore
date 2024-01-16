@@ -6,7 +6,7 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">   
 	
 	
-	<bean id="emp" class="DependencyInjections.Employee">
+	<bean id="emp1" class="DependencyInjections.Employee">
 	<property name="id"  value="1"></property>
 		<property name="name"  value="Swapnil"></property>
 		<property name="email"  value="Swapnil@gmail.com"></property>

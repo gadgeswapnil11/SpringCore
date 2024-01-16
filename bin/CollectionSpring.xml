@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -14,55 +13,50 @@
 		<property name="id" value="1"></property>
 		<property name="name" value="Swapnil"></property>
 
-		<property name="list">
+		<property name="intlist">
+
 			<list>
-				<value>11111</value>
-				<value>22222</value>
-				<value>33333</value>
-				<value>44444</value>
-				<value>55555</value>
-				<value>66666</value>
+
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+
 
 
 			</list>
-
-
 		</property>
 
-		<property name="set">
+
+
+		<property name="namesset">
+
 			<set>
-				<value></value>
-				<value>Swapnil</value>
-				<value>Avinash</value>
-				<value>Shivansh</value>
-				<value>Shubham</value>
-				<value>Vaishnavi</value>
-				<value>Swapnil</value>
-				<value>Swapnil</value>
+
+				<value>AA</value>
+				<value>BB</value>
+				<value>CC</value>
+
+
 
 			</set>
 		</property>
 
 
-		<property name="map">
+
+		<property name="pairsmap">
+
 			<map>
-				<entry key="11111" value="Swapnil">
-				</entry>
-				<entry key="22222" value="Shivansh">
-				</entry>
-				<entry key="33333" value="Avinash">
-				</entry>
-				<entry key="44444" value="Swapnil">
-				</entry>
-				<entry key="55555" value="Shubham">
-				</entry>
-				<entry key="66666" value="Vaishnavi">
-				</entry>
+
+<entry key="ABC" value="10"></entry>
+<entry key="PQR" value="20"></entry>
+<entry key="STV" value="30"></entry>
+
+
 
 
 			</map>
-
 		</property>
+
 	</bean>
 
 </beans>
