@@ -1,0 +1,46 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+	<context:annotation-config />
+
+
+
+
+	<bean id="emp" class="Annotations.Employee">
+
+		<property name="id" value="1"></property>
+		<property name="name" value="Swapnil"></property>
+
+	</bean>
+
+
+
+
+	<bean id="add1" class="Annotations.Address">
+
+		<property name="city" value="Nanded"></property>
+		<property name="pin" value="413517"></property>
+
+	</bean>
+
+
+
+	<bean id="state" class="Annotations.States">
+
+		<property name="satate" value="Maharahstra"></property>
+		<property name="dist" value="Latur"></property>
+
+	</bean>
+
+ 
+	<bean id="subdist" class="Annotations.Subdist">
+
+		<property name="subdistName" value="Ahmedpur"></property>
+
+	</bean>
+
+</beans>

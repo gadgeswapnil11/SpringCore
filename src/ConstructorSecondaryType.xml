@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="emp" class="ConstructorInjection2.Employee">
+
+	</bean>
+
+	<bean id="emp1" class="ConstructorInjection2.Employee">
+		<constructor-arg value="Swapnil">
+		</constructor-arg>
+		<constructor-arg value="Gadge">
+		</constructor-arg>
+
+	</bean>
+
+
+
+	<bean id="dept" class="ConstructorInjection2.Department">
+
+	<property name="designation" value="SDE1"></property>
+
+	<property name="departMent" value="Devlopment"></property>
+
+	</bean>
+
+
+	<bean id="company" class="ConstructorInjection2.Company">
+
+		<constructor-arg value="Google"></constructor-arg>
+		<constructor-arg ref="dept"></constructor-arg>
+
+	</bean>
+
+
+
+	<bean id="city" class="ConstructorInjection2.City">
+		<constructor-arg value="Pune"></constructor-arg>
+		<constructor-arg value="413515" index="1"></constructor-arg>
+		<constructor-arg ref="company"></constructor-arg>
+
+	</bean>
+
+
+	<bean id="add" class="ConstructorInjection2.Address">
+		<constructor-arg value="Maharashtra"></constructor-arg>
+		<constructor-arg ref="city"></constructor-arg>
+
+	</bean>
+
+	<bean id="emp2" class="ConstructorInjection2.Employee">
+		<constructor-arg value="10"></constructor-arg>
+		<constructor-arg value="Swapil"></constructor-arg>
+		<constructor-arg value="Gadge"></constructor-arg>
+		<constructor-arg ref="add"></constructor-arg>
+
+	</bean>
+
+
+</beans>
