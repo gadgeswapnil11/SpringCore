@@ -1,0 +1,52 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+	<context:annotation-config />
+
+
+
+
+	<bean id="student" class="AnnotationAutowiredNQukifier.Student">
+		<property name="id" value="1"></property>
+	</bean>
+
+
+	<bean id="add" class="AnnotationAutowiredNQukifier.Address">
+		<property name="city" value="Latur"></property>
+	</bean>
+
+
+
+	<bean id="state" class="AnnotationAutowiredNQukifier.State">
+		<property name="stateName" value="Maharashtra"></property>
+	</bean>
+
+
+
+
+	<bean id="dist" class="AnnotationAutowiredNQukifier.Dist">
+		<property name="stateName" value="Maharashtra"></property>
+	</bean>
+
+
+
+<bean id="dept" class="AnnotationAutowiredNQukifier.Department">
+		<property name="deptname" value="IT"></property>
+	</bean>
+	
+	
+	<bean id="sub1" class="AnnotationAutowiredNQukifier.Subject">
+		<property name="subjectname" value="Java"></property>
+	</bean>
+	
+	
+	<bean id="sub2" class="AnnotationAutowiredNQukifier.Subject">
+		<property name="subjectname" value="AWS"></property>
+	</bean>
+
+
+</beans>

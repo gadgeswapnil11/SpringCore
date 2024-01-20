@@ -1,0 +1,80 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+	<context:component-scan
+		base-package="Annotation2*" />
+
+
+
+
+
+	<bean id="emp" class="Annotation2.Employee">
+
+		<property name="name" value="Swapnil"></property>
+		<property name="Lname" value="Gadge"></property>
+
+	</bean>
+
+	<bean id="emp1" class="Annotation2.Employee">
+
+		<property name="name" value="Avinash"></property>
+		<property name="Lname" value="Gadge"></property>
+
+	</bean>
+
+
+	<bean id="add" class="Annotation2.Address">
+		<property name="cityname" value="CityPune"></property>
+	</bean>
+
+
+
+	<bean id="state" class="Annotation2.State">
+		<property name="stateName" value="Maharashtra"></property>
+	</bean>
+
+
+	<bean id="state1" class="Annotation2.State">
+		<property name="stateName" value="Uttarpradesh"></property>
+	</bean>
+
+
+
+	<bean id="dist" class="Annotation2.Dist">
+		<property name="distName" value="Pune"></property>
+	</bean>
+
+
+	<bean id="dist1" class="Annotation2.Dist">
+		<property name="distName" value="Latur"></property>
+	</bean>
+
+
+	<bean id="subdist1" class="Annotation2.Subdist">
+
+		<property name="subDistname" value="Ahmedpur"></property>
+		<property name="pincode" value="413515"></property>
+
+	</bean>
+
+
+	<bean id="dept" class="Annotation2.Dept">
+		<property name="dpetName" value="Devlopment"></property>
+	</bean>
+
+	<bean id="desig" class="Annotation2.Designations">
+		<property name="designation" value="SDE"></property>
+	</bean>
+
+
+	<bean id="officelocation" class="Annotation2.OfficeLoaction">
+	
+			<property name="officeplace" value="Stellar pune Kharadi"></property>
+	</bean>
+
+
+</beans>
