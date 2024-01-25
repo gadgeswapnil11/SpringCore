@@ -7,7 +7,17 @@ public class Subdist {
 	private String subDistname;
 	private String pincode;
 	
-	
+	@Autowired
+	@Qualifier(value="desig")
+	private Designations designation;
+
+	public Designations getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(Designations designation) {
+		this.designation = designation;
+	}
 
 	public Subdist() {
 
@@ -15,10 +25,7 @@ public class Subdist {
 
 	}
 
-	@Override
-	public String toString() {
-		return "Subdist [subDistname=" + subDistname + ", pincode=" + pincode + "]";
-	}
+
 
 	public String getSubDistname() {
 		return subDistname;
@@ -34,5 +41,9 @@ public class Subdist {
 
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
+	}
+	@Override
+	public String toString() {
+		return "Subdist [subDistname=" + subDistname + ", pincode=" + pincode + "]";
 	}
 }

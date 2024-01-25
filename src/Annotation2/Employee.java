@@ -4,70 +4,70 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
-	
-	public Employee(){
-		
+
+	public Employee() {
+
 		System.out.println("Inside Employee");
-		
+
 	}
-private String name;
-private String Lname;
 
-@Autowired
-@Qualifier(value="add")
-private Address address;
-@Autowired
-@Qualifier(value="dept")
-private Dept dept;  
+	private String name;
+	private String Lname;
 
-public Dept getDept() {
-	return dept;
-}
+	@Autowired
+	@Qualifier(value = "add")
+	private Address address;
+	@Autowired
+	@Qualifier(value = "dept")
+	private Dept dept;
 
-public void setDept(Dept dept) {
-	this.dept = dept;
-}
+	public Dept getDept() {
+		return dept;
+	}
 
-public OfficeLoaction getOfficeLocation() {
-	return officeLocation;
-}
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
 
-public void setOfficeLocation(OfficeLoaction officeLocation) {
-	this.officeLocation = officeLocation;
-}
-@Autowired
-private OfficeLoaction officeLocation;
+	public OfficeLoaction getOfficeLocation() {
+		return officeLocation;
+	}
 
-@Override
-public String toString() {
-	return "Employee [name=" + name + ", Lname=" + Lname + ", address=" + address + ", dept=" + dept
-			+ ", officeLocation=" + officeLocation + "]";
-}
+	public void setOfficeLocation(OfficeLoaction officeLocation) {
+		this.officeLocation = officeLocation;
+	}
 
-public String getName() {
-	return name;
-}
+	@Autowired
+	private OfficeLoaction officeLocation;
 
-public void setName(String name) {
-	this.name = name;
-}
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", Lname=" + Lname + ", address=" + address + ", dept=" + dept
+				+ ", officeLocation=" + officeLocation + "]";
+	}
 
-public String getLname() {
-	return Lname;
-}
+	public String getName() {
+		return name;
+	}
 
-public void setLname(String lname) {
-	Lname = lname;
-}
+	public void setName(String name) {
+		this.name = name;
+	}
 
-public Address getAddress() {
-	return address;
-}
+	public String getLname() {
+		return Lname;
+	}
 
-public void setAddress(Address address) {
-	this.address = address;
-}
+	public void setLname(String lname) {
+		Lname = lname;
+	}
 
+	public Address getAddress() {
+		return address;
+	}
 
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 }

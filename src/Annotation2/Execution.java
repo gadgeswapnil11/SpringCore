@@ -9,7 +9,10 @@ public class Execution {
 	public static void main(String[] args) {
 	ApplicationContext ctx= new ClassPathXmlApplicationContext("AutowireNQulifierBean.xml");
 	Employee e= (Employee)ctx.getBean("emp");  
+	
 	System.out.println(e);
+	System.out.println(e.getOfficeLocation().getOfficeplace());
+
 	
 	}
 }   

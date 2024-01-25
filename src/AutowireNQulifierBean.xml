@@ -9,7 +9,7 @@
 		base-package="Annotation2*" />
 
 	<bean id="emp" class="Annotation2.Employee">
-
+  
 		<property name="name" value="Swapnil"></property>
 		<property name="Lname" value="Gadge"></property>
 
